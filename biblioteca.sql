@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 28-02-2025 a las 04:33:53
+-- Tiempo de generación: 01-03-2025 a las 02:24:50
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -108,7 +108,7 @@ CREATE TABLE `prestamos` (
 
 INSERT INTO `prestamos` (`ID_Prestamo`, `ID_Usuario`, `ID_Libro`, `Fecha_Prestamo`, `Fecha_Devolucion`) VALUES
 (1, 1, 1, '2024-08-01', '2024-08-15'),
-(3, 2, 2, '2024-08-02', '2024-08-16');
+(2, 2, 2, '2024-08-02', '2024-08-16');
 
 -- --------------------------------------------------------
 
@@ -141,9 +141,7 @@ CREATE TABLE `usuarios` (
 
 INSERT INTO `usuarios` (`ID_Usuario`, `Nombre`, `Direccion`, `Telefono`) VALUES
 (1, 'Carlos Martínez', 'Calle Luna, 123', '123456789'),
-(2, 'Lucía Fernández', 'Avenida Sol, 456', '987654321'),
-(3, 'Carlos Martínez', 'Calle Luna, 123', '123456789'),
-(4, 'Lucía Fernández', 'Avenida Sol, 456', '987654321');
+(2, 'Lucía Fernández', 'Avenida Sol, 456', '987654321');
 
 --
 -- Índices para tablas volcadas
@@ -217,7 +215,7 @@ ALTER TABLE `libros`
 -- AUTO_INCREMENT de la tabla `prestamos`
 --
 ALTER TABLE `prestamos`
-  MODIFY `ID_Prestamo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `ID_Prestamo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `prestamos_usuarios`
@@ -229,7 +227,7 @@ ALTER TABLE `prestamos_usuarios`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `ID_Usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `ID_Usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Restricciones para tablas volcadas
